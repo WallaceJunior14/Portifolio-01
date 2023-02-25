@@ -1,0 +1,366 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+    font-size: 62.5%;
+
+    --body-bg-color: #22212C;
+    --text-color: #837E9F;
+    --bg-cards: #302F3D;
+    --bg-techs: #CB92B1;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Merriweather Sans", sans-serif;
+    color: var(--text-color);
+
+    background-color: var(--body-bg-color);
+
+}
+
+h1 {
+    font-size: 2.3rem;
+    font-weight: 700;
+    line-height: 2.9rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+}
+
+#screen {
+    height: 100vh;
+
+    display: grid;
+
+    grid-template-columns: 30% auto;
+}
+
+.card {
+    position: relative;
+    margin: 4rem;
+
+    border-radius: 2rem;
+
+    background: var(--bg-cards);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+} 
+
+/*Profile*/
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    
+    padding: 4rem;
+}
+
+.profile img {
+    height: 12.8rem;
+    width: 12.8rem;
+    border: 0.2rem solid #00FF00;
+    border-radius: 50%;
+}
+
+.profile h1 {
+    text-align: center;
+
+    margin: 3rem 0 1rem 0;
+}
+
+.profile p {
+    text-align: center;
+}
+
+/*Information*/
+.information ol {
+    padding: 3rem 4rem 1rem;
+    list-style: none;
+}
+
+.information ol li a{
+    display: flex;
+    align-items: center;
+
+    text-decoration: none;
+    color: var(--text-color);
+
+    margin-bottom: 2rem;
+}
+
+.information ol li a img{
+    size: 2.4rem;
+    margin-right: 2rem;
+}
+
+/*Technologies*/
+.technologies {
+    padding: 3rem 2rem;
+}
+
+.technologies ol {
+    margin: 2rem 1rem;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+
+    list-style: none;
+}
+
+.technologies ol li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 2.4rem;
+
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--body-bg-color);
+
+    border-radius: 3rem;
+
+    background-color: var(--bg-techs);
+}
+
+/*Experience*/
+.experiences {
+    padding: 3rem 2rem;
+}
+
+.experiences ul {
+    margin: 2rem 4rem;
+}
+
+.experiences ul li {
+    margin-bottom: 1.5rem;
+}
+
+.experiences ul li h3 {
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+}
+
+.experiences ul li span {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    font-weight: 300;
+}
+
+.experiences ul li p {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+}
+
+/*Education*/
+.education {
+    padding: 3rem 2rem;
+}
+
+.education ul {
+    margin: 2rem 4rem;
+}
+
+.education ul li {
+    margin-bottom: 1.5rem;
+}
+
+.education ul li h3 {
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+}
+
+.education ul li span,
+.education ul li p {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    font-weight: 300;
+}
+
+
+
+/*
+    MAIN
+*/
+
+#main {
+    padding: 4rem 3rem;
+}
+
+.card-title {
+    width: 100%;
+    height: 8.6rem;
+
+    padding: 3rem;
+
+    margin-bottom: 3rem;
+
+    border-radius: 2rem;
+
+    background-color: var(--bg-cards);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.container-projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+
+    margin-bottom: 3rem;
+}
+
+.container-projects .projects {
+    padding: 3rem;
+
+    border-radius: 2rem;
+    background-color: var(--bg-cards);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.projects header {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.projects header img {
+    height: 2rem;
+    width: 2rem;
+}
+
+.projects header h5 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 2rem;
+}
+
+.projects main {
+    margin: 2.2rem 0rem 4rem;
+}
+
+.projects main p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2rem;
+
+}
+
+.projects footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-data-git,
+.container-data-git .git-stars,
+.container-data-git .git-branch, 
+.container-type-language {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.container-data-git {
+    gap: 1.5rem;
+}
+
+.container-data-git .git-stars img,
+.container-data-git .git-branch img{
+    height: 2rem;
+    width: 2rem;
+}
+
+.container-data-git .git-stars span,
+.container-data-git .git-branch span,
+.container-type-language p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+}
+
+.container-type-language .radio {
+    height: 1.5rem;
+    width: 1.5rem;
+
+    border: 0.2rem solid var(--text-color);
+    border-radius: 50%;
+
+    background-color: rgba(231, 222, 121, 1);
+}
+
+/*POSTS*/
+.posts {
+    position: relative;
+
+    padding: 3rem;
+
+    border-radius: 2rem;
+
+    display: grid;
+    grid-template-columns: auto auto;
+
+    background: var(--bg-cards);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.posts .avatar-post img {
+    height: 12.8rem;
+    width: 12.8rem;
+
+    border-radius: 50%;
+}
+
+.title-post {
+    margin-bottom: 2.8rem;
+}
+
+.title-post h1{
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+}
+
+.title-post span {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+}
+
+.post-content p{
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.0rem;
+
+    margin-bottom: 1rem;
+}
+
+.post-content ol {
+    list-style: none;
+
+    display: flex;
+    gap: 1rem;
+}
+
+.post-content ol li {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+}
