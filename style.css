@@ -280,7 +280,7 @@ p {
 .container-data-git {
     gap: 1.5rem;
 }
-
+ 
 .container-data-git .git-stars img,
 .container-data-git .git-branch img{
     height: 2rem;
